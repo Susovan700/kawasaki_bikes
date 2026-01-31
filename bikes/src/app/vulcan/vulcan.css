@@ -206,32 +206,31 @@
   font-size: 16px;
   text-shadow: 0 0 8px rgba(0, 255, 0, 0.5);
 }
-
-@media (max-width: 1200px) {
-  .vulcan-content {
-    padding: 100px 30px 60px;
+@media (max-width: 1024px) {
+  .ninja-content {
+    padding: 180px 30px 60px;
   }
 
-  .vulcan-card-container {
+  .ninja-card-container {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
   }
 }
 
 @media (max-width: 768px) {
-  .vulcan-content {
-    padding: 80px 20px 40px;
+  .ninja-content {
+    padding: 160px 20px 40px;
   }
 
-  .vulcan-hero {
+  .ninja-hero {
     margin-bottom: 50px;
   }
 
-  .vulcan-tagline {
+  .ninja-tagline {
     padding-left: 0;
   }
 
-  .vulcan-card-container {
+  .ninja-card-container {
     grid-template-columns: 1fr;
     gap: 30px;
     max-width: 500px;
@@ -255,11 +254,11 @@
 }
 
 @media (max-width: 480px) {
-  .vulcan-content {
-    padding: 70px 15px 30px;
+  .ninja-content {
+    padding: 140px 15px 30px;
   }
 
-  .vulcan-hero {
+  .ninja-hero {
     margin-bottom: 40px;
   }
 
@@ -275,7 +274,6 @@
     min-height: 500px;
   }
 }
-
 ::-webkit-scrollbar {
   width: 0px;
   height: 0px;

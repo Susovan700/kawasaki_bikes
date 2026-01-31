@@ -200,9 +200,9 @@
 }
 
 /* Responsive Design */
-@media (max-width: 1200px) {
+@media (max-width: 1024px) {
   .ninja-content {
-    padding: 100px 30px 60px;
+    padding: 180px 30px 60px;
   }
 
   .ninja-card-container {
@@ -213,7 +213,7 @@
 
 @media (max-width: 768px) {
   .ninja-content {
-    padding: 80px 20px 40px;
+    padding: 160px 20px 40px;
   }
 
   .ninja-hero {
@@ -232,6 +232,7 @@
 
   .card-main {
     padding: 20px;
+    min-height: 550px;
   }
 
   .card-tag {
@@ -240,11 +241,15 @@
     font-size: 0.7rem;
     padding: 5px 12px;
   }
+
+  .card-img {
+    height: 220px;
+  }
 }
 
 @media (max-width: 480px) {
   .ninja-content {
-    padding: 70px 15px 30px;
+    padding: 140px 15px 30px;
   }
 
   .ninja-hero {
@@ -255,9 +260,12 @@
     font-size: 0.8rem;
   }
 
-  .card-img img {
-    min-height: 150px;
-    max-height: 200px;
+  .card-img {
+    height: 180px;
+  }
+
+  .card-main {
+    min-height: 500px;
   }
 }
 
