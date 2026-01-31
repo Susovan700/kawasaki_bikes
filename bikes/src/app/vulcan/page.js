@@ -4,137 +4,57 @@ import Navbar from "../components/navbar/page";
 import Sidebar from "../components/sidebar/page";
 import "./vulcan.css";
 
-export default function Ninja() {
+export default function vulcan() {
   const router = useRouter();
 
   const cards = [
-  {
-    id: 1,
-    img: "/ninja300t.png",
-    title: "Ninja 300",
-    tag: "New 2026",
-    description: "POWERFUL 296 CC PARALLEL TWIN ENGINE",
-    feature: "CIRCUIT-BRED CHASSIS WITH SUPERB HANDLING AND EXCELLENT RIDE QUALITY",
-    style: "STUNNING NINJA STYLING WITH HIGH-LEVEL FIT AND FINISH",
-  },
-  {
-    id: 2,
-    img: "/zx6rt.png",
-    title: "Ninja ZX-6R",
-    tag: "New 2026",
-    description: "SMOOTH, FLOWING NINJA ZX STYLING",
-    feature: "PERFORMANCE OPTIMIZED FOR ADVANTAGE STREET-RIDING EXHILARATION",
-    style: "ADVANCED TECHNOLOGY",
-  },
-  {
-    id: 3,
-    img: "/ninja650t.png",
-    title: "Ninja 650",
-    tag: "New 2026",
-    description: "KTRC (KAWASAKI TRACTION CONTROL)",
-    feature: "SMARTPHONE CONNECTIVITY",
-    style: "TFT COLOUR INSTRUMENTATION",
-  },
-  {
-    id: 4,
-    img: "/zx10rt.png",
-    title: "Ninja ZX-10R",
-    tag: "New 2026",
-    description: "BUILDING ON WSB-PROVEN PERFORMANCE",
-    feature: "STYLED FOR AERODYNAMICS",
-    style: "KAWASAKI'S ADVANCED ELECTRONICS",
-  },
-  {
-    id: 5,
-    img: "/ninja1100sxt.png",
-    title: "Ninja 1100SX",
-    tag: "New 2026",
-    description: "UPGRADED SPORT RIDING ENJOYMENT",
-    feature: "INCREASED TOURING PERFORMANCE",
-    style: "SUPERSPORT-STYLE CHASSIS COMPONENTS",
-  },
-  {
-    id: 6,
-    img: "/ninja30025t.png", 
-    title: "Ninja 300",
-    tag: "2025",
-    description: "POWERFUL 296 CC PARALLEL TWIN ENGINE",
-    feature: "CIRCUIT-BRED CHASSIS WITH SUPERB HANDLING AND EXCELLENT RIDE QUALITY",
-    style: "STUNNING NINJA STYLING WITH HIGH-LEVEL FIT AND FINISH",
-  },
-  {
-    id: 7,
-    img: "/ninja500t.png",
-    title: "Ninja 500",
-    tag: "New 2025",
-    description: "LIGHTWEIGHT, MANEUVERABLE CHASSIS",
-    feature: "POWERFUL, RIDER-FRIENDLY 451 CC PARALLEL-TWIN ENGINE",
-    style: "HIGH-CLASS, INTENSE DESIGN",
-  },
-  {
-    id: 8,
-    img: "/ninja65025t.png",
-    title: "Ninja 650",
-    tag: "2025",
-    description: "KTRC (KAWASAKI TRACTION CONTROL)",
-    feature: "SMARTPHONE CONNECTIVITY",
-    style: "TFT COLOUR INSTRUMENTATION",
-  },
-  {
-    id: 9,
-    img: "/zx10rt.png",
-    title: "Ninja ZX-10R",
-    tag: "2025",
-    description: "BUILDING ON WSB-PROVEN PERFORMANCE",
-    feature: "STYLED FOR AERODYNAMICS",
-    style: "KAWASAKI'S ADVANCED ELECTRONICS",
-  },
-  {
-    id: 10,
-    img: "/ninjah2sxt.png",
-    title: "Ninja H2 SX",
-    tag: "2025",
-    description: "998 CC IN-LINE FOUR BALANCED SUPERCHARGED ENGINE",
-    feature: "ADVANCED RIDER ASSISTANCE SYSTEMS (ARAS)",
-    style: "6.5” TFT COLOUR INSTRUMENTATION WITH KAWASAKI SPIN",
-  },
-  {
-    id: 11,
-    img: "/ninja1100sxset.png",
-    title: "Ninja H2 SX SE",
-    tag: "New 2025",
-    description: "SUPERCHARGED SPORT TOURING",
-    feature: "LEADING-EDGE TECHNOLOGY",
-    style: "FLAGSHIP CONVENIENCE FEATURES",
-  },
-  {
-    id: 12,
-    img: "/ninja1100sxt.png", 
-    title: "Ninja 1100SX",
-    tag: "2025",
-    description: "UPGRADED SPORT RIDING ENJOYMENT",
-    feature: "INCREASED TOURING PERFORMANCE",
-    style: "SUPERSPORT-STYLE CHASSIS COMPONENTS",
-  },
-];
+    {
+      id: 1,
+      img: "/vulcans25.png",
+      title: "VULCAN S",
+      tag: "New 2026",
+      description: "MODERN, URBAN STYLING",
+      feature: "LOW SEAT HEIGHT",
+      style: "EASY-TO-CONTROL 649 CM3 LIQUID-COOLED, 4-STROKE PARALLEL TWIN",
+    },
+    {
+      id: 2,
+      img: "/vulcanscafe26.png",
+      title: "VULCAN S CAFE",
+      tag: "New 2026",
+      description: "SPORTY CAFE-RACER STYLING",
+      feature: "ERGO-FIT CUSTOMIZABLE RIDING POSITION",
+      style: "SIGNATURE THREE-TONE PAINT & WIND DEFLECTOR",
+    },
+
+    {
+      id: 3,
+      img: "/vulcan900_classic25.png",
+      title: "VULCAN 900 CLASSIC",
+      tag: "2025",
+      description: "903 CC V-TWIN FUEL-INJECTED ENGINE",
+      feature: "LOW SEAT HEIGHT AND WIDE HANDLEBARS",
+      style: "CLASSIC CRUISER LOOK WITH CHROME ACCENTS",
+    },
+  ];
 
   return (
-    <div className="ninja-page">
+    <div className="vulcan-page">
       <Navbar />
       <Sidebar />
 
-      <div className="ninja-content">
-        <div className="ninja-hero">
-          <h1 className="ninja-main-title">
-            NINJA
+      <div className="vulcan-content">
+        <div className="vulcan-hero">
+          <h1 className="vulcan-main-title">
+            vulcan
             <span className="title-accent">SERIES</span>
           </h1>
-          <p className="ninja-tagline">
-            The Soul of a Cruiser. The Heart of a Ninja.
+          <p className="vulcan-tagline">
+            The Soul of a Cruiser. The Heart of a vulcan.
           </p>
         </div>
 
-        <div className="ninja-card-container">
+        <div className="vulcan-card-container">
           {" "}
           {cards.map((card) => (
             <div className="card-main" key={card.id}>

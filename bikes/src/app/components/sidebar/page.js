@@ -17,13 +17,11 @@ export default function Sidebar() {
     { name: "KX", className: "kx", path: "/kx" },
   ];
 
-
   const isHomePage = pathname === "/" || pathname === "/home";
 
   return (
     <div className="sidebar">
       <div className="sidebar-contents">
-
         <div
           className={`home-btn sidebar-item ${isHomePage ? "active" : ""}`}
           onClick={() => router.push("/")}

@@ -4,137 +4,91 @@ import Navbar from "../components/navbar/page";
 import Sidebar from "../components/sidebar/page";
 import "./klx.css";
 
-export default function Ninja() {
+export default function klx() {
   const router = useRouter();
-
-  const cards = [
+const cards = [
   {
     id: 1,
-    img: "/ninja300t.png",
-    title: "Ninja 300",
+    img: "/klx230t_26.png",
+    title: "KLX230",
     tag: "New 2026",
-    description: "POWERFUL 296 CC PARALLEL TWIN ENGINE",
-    feature: "CIRCUIT-BRED CHASSIS WITH SUPERB HANDLING AND EXCELLENT RIDE QUALITY",
-    style: "STUNNING NINJA STYLING WITH HIGH-LEVEL FIT AND FINISH",
+    description: "233 CC FUEL-INJECTED AIR-COOLED FOUR-STROKE SINGLE",
+    feature: "CAPABLE OFF-ROAD PERFORMANCE",
+    style: "TRAIL-TUNED LONG-TRAVEL SUSPENSION",
   },
   {
     id: 2,
-    img: "/zx6rt.png",
-    title: "Ninja ZX-6R",
+    img: "/klx230rst_26.png",
+    title: "KLX230R S",
     tag: "New 2026",
-    description: "SMOOTH, FLOWING NINJA ZX STYLING",
-    feature: "PERFORMANCE OPTIMIZED FOR ADVANTAGE STREET-RIDING EXHILARATION",
-    style: "ADVANCED TECHNOLOGY",
+    description: "CAPABLE OFF-ROAD PERFORMANCE",
+    feature: "COMPACT, LIGHTWEIGHT, MANOEUVRABLE",
+    style: "LATEST KX STYLING WITH SMOOTH-DESIGN BODYWORK",
   },
   {
     id: 3,
-    img: "/ninja650t.png",
-    title: "Ninja 650",
-    tag: "New 2026",
-    description: "KTRC (KAWASAKI TRACTION CONTROL)",
-    feature: "SMARTPHONE CONNECTIVITY",
-    style: "TFT COLOUR INSTRUMENTATION",
+    img: "/klx230t_25.png",
+    title: "KLX230",
+    tag: "2025",
+    description: "233 CC FUEL-INJECTED AIR-COOLED FOUR-STROKE SINGLE",
+    feature: "CAPABLE OFF-ROAD PERFORMANCE",
+    style: "TRAIL-TUNED LONG-TRAVEL SUSPENSION",
   },
   {
     id: 4,
-    img: "/zx10rt.png",
-    title: "Ninja ZX-10R",
-    tag: "New 2026",
-    description: "BUILDING ON WSB-PROVEN PERFORMANCE",
-    feature: "STYLED FOR AERODYNAMICS",
-    style: "KAWASAKI'S ADVANCED ELECTRONICS",
+    img: "/klx110rlt.png",
+    title: "KLX110RL",
+    tag: "2024",
+    description: "112 CC AIR-COOLED, 4-STROKE SINGLE",
+    feature: "SPORTY RACE-INSPIRED STYLING",
+    style: "4-SPEED WITH MANUAL CLUTCH",
   },
   {
     id: 5,
-    img: "/ninja1100sxt.png",
-    title: "Ninja 1100SX",
-    tag: "New 2026",
-    description: "UPGRADED SPORT RIDING ENJOYMENT",
-    feature: "INCREASED TOURING PERFORMANCE",
-    style: "SUPERSPORT-STYLE CHASSIS COMPONENTS",
+    img: "/klx140ft.png",
+    title: "KLX140F",
+    tag: "2024",
+    description: "EASY, LIGHTWEIGHT & RELIABLE",
+    feature: "GREAT TRAIL-RIDING POTENTIAL",
+    style: "KX-INSPIRED STYLING",
   },
   {
     id: 6,
-    img: "/ninja30025t.png", 
-    title: "Ninja 300",
-    tag: "2025",
-    description: "POWERFUL 296 CC PARALLEL TWIN ENGINE",
-    feature: "CIRCUIT-BRED CHASSIS WITH SUPERB HANDLING AND EXCELLENT RIDE QUALITY",
-    style: "STUNNING NINJA STYLING WITH HIGH-LEVEL FIT AND FINISH",
+    img: "/klx230rst_24.png",
+    title: "KLX230R S",
+    tag: "2024",
+    description: "233 CC FUEL-INJECTED AIR-COOLED FOUR-STROKE SINGLE",
+    feature: "CAPABLE OFF-ROAD PERFORMANCE",
+    style: "TRAIL-TUNED LONG-TRAVEL SUSPENSION",
   },
   {
     id: 7,
-    img: "/ninja500t.png",
-    title: "Ninja 500",
-    tag: "New 2025",
-    description: "LIGHTWEIGHT, MANEUVERABLE CHASSIS",
-    feature: "POWERFUL, RIDER-FRIENDLY 451 CC PARALLEL-TWIN ENGINE",
-    style: "HIGH-CLASS, INTENSE DESIGN",
-  },
-  {
-    id: 8,
-    img: "/ninja65025t.png",
-    title: "Ninja 650",
-    tag: "2025",
-    description: "KTRC (KAWASAKI TRACTION CONTROL)",
-    feature: "SMARTPHONE CONNECTIVITY",
-    style: "TFT COLOUR INSTRUMENTATION",
-  },
-  {
-    id: 9,
-    img: "/zx10rt.png",
-    title: "Ninja ZX-10R",
-    tag: "2025",
-    description: "BUILDING ON WSB-PROVEN PERFORMANCE",
-    feature: "STYLED FOR AERODYNAMICS",
-    style: "KAWASAKI'S ADVANCED ELECTRONICS",
-  },
-  {
-    id: 10,
-    img: "/ninjah2sxt.png",
-    title: "Ninja H2 SX",
-    tag: "2025",
-    description: "998 CC IN-LINE FOUR BALANCED SUPERCHARGED ENGINE",
-    feature: "ADVANCED RIDER ASSISTANCE SYSTEMS (ARAS)",
-    style: "6.5” TFT COLOUR INSTRUMENTATION WITH KAWASAKI SPIN",
-  },
-  {
-    id: 11,
-    img: "/ninja1100sxset.png",
-    title: "Ninja H2 SX SE",
-    tag: "New 2025",
-    description: "SUPERCHARGED SPORT TOURING",
-    feature: "LEADING-EDGE TECHNOLOGY",
-    style: "FLAGSHIP CONVENIENCE FEATURES",
-  },
-  {
-    id: 12,
-    img: "/ninja1100sxt.png", 
-    title: "Ninja 1100SX",
-    tag: "2025",
-    description: "UPGRADED SPORT RIDING ENJOYMENT",
-    feature: "INCREASED TOURING PERFORMANCE",
-    style: "SUPERSPORT-STYLE CHASSIS COMPONENTS",
-  },
+    img: "/klx450rt.png",
+    title: "KLX450R",
+    tag: "2024",
+    description: "449 CC, LIQUID-COOLED, 4-STROKE, DOHC 4-VALVE SINGLE-CYLINDER ENGINE",
+    feature: "5-SPEED TRANSMISSION",
+    style: "RESPONSIVE, LIGHT-HANDLING CHASSIS",
+  }
 ];
 
   return (
-    <div className="ninja-page">
+    <div className="klx-page">
       <Navbar />
       <Sidebar />
 
-      <div className="ninja-content">
-        <div className="ninja-hero">
-          <h1 className="ninja-main-title">
-            NINJA
+      <div className="klx-content">
+        <div className="klx-hero">
+          <h1 className="klx-main-title">
+            klx
             <span className="title-accent">SERIES</span>
           </h1>
-          <p className="ninja-tagline">
+          <p className="klx-tagline">
             The World is Your Playground. Get Out and Play.
           </p>
         </div>
 
-        <div className="ninja-card-container">
+        <div className="klx-card-container">
           {" "}
           {cards.map((card) => (
             <div className="card-main" key={card.id}>

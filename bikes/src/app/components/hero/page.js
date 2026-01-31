@@ -14,7 +14,7 @@ export default function Hero() {
   const slides = [
     {
       id: 1,
-      img: "/h2r.png",
+      img: "/h2rt.png",
       title: "NINJA H2R: BEYOND BELIEF",
       description:
         "The world's only self-produced supercharged supersport model.",
@@ -34,7 +34,7 @@ export default function Hero() {
     },
     {
       id: 3,
-      img: "/h2r.png",
+      img: "/versys650t_25.png",
       title: "VERSYS 650: ANY ROAD, ANY TIME",
       description: "Maximum versatility for your next adventure.",
       subtitle: "649 CC",

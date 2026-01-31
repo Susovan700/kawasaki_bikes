@@ -1,16 +1,16 @@
-.ninja-page {
+.eliminator-page {
   min-height: 100vh;
   background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
   color: #ffffff;
 }
 
-.ninja-content {
+.eliminator-content {
   padding: 120px 40px 80px;
   max-width: 1600px;
   margin: 0 auto;
 }
 
-.ninja-hero {
+.eliminator-hero {
   margin-bottom: 80px;
   animation: fadeInUp 1s ease-out;
   display: flex;
@@ -29,7 +29,7 @@
   }
 }
 
-.ninja-main-title {
+.eliminator-main-title {
   font-family: "Rajdhani", "Bebas Neue", sans-serif;
   font-size: clamp(2rem, 6vw, 3rem);
   font-weight: 600;
@@ -59,7 +59,7 @@
   }
 }
 
-.ninja-tagline {
+.eliminator-tagline {
   font-family: "Inter", "Roboto", sans-serif;
   font-size: clamp(1rem, 2vw, 1.25rem);
   color: #a1a1a1;
@@ -70,7 +70,7 @@
   margin-top: 10px;
 }
 
-.ninja-card-container {
+.eliminator-card-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   justify-content: center;
@@ -201,30 +201,30 @@
 
 /* Responsive Design */
 @media (max-width: 1200px) {
-  .ninja-content {
+  .eliminator-content {
     padding: 100px 30px 60px;
   }
 
-  .ninja-card-container {
+  .eliminator-card-container {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
   }
 }
 
 @media (max-width: 768px) {
-  .ninja-content {
+  .eliminator-content {
     padding: 80px 20px 40px;
   }
 
-  .ninja-hero {
+  .eliminator-hero {
     margin-bottom: 50px;
   }
 
-  .ninja-tagline {
+  .eliminator-tagline {
     padding-left: 0;
   }
 
-  .ninja-card-container {
+  .eliminator-card-container {
     grid-template-columns: 1fr;
     gap: 30px;
     max-width: 500px;
@@ -243,11 +243,11 @@
 }
 
 @media (max-width: 480px) {
-  .ninja-content {
+  .eliminator-content {
     padding: 70px 15px 30px;
   }
 
-  .ninja-hero {
+  .eliminator-hero {
     margin-bottom: 40px;
   }
 
