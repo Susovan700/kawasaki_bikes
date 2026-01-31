@@ -1,4 +1,3 @@
-
 :root {
   --kawasaki-green: #00ff00;
   --kawasaki-dark-green: #00cc00;
@@ -17,9 +16,7 @@
   min-height: 600px;
   background: linear-gradient(135deg, var(--racing-black) 0%, #000000 50%, var(--carbon-gray) 100%);
   overflow: hidden;
-
 }
-
 
 .hero-bg-grid {
   position: absolute;
@@ -176,7 +173,7 @@
   }
 }
 
-/* Description */
+
 .hero-description {
   font-family: 'Inter', 'Roboto', sans-serif;
   font-size: 1.125rem;
@@ -187,7 +184,6 @@
   animation: fadeIn 0.8s ease-out 0.5s both;
 }
 
-/* Stats Section */
 .hero-stats {
   display: flex;
   align-items: center;
@@ -299,9 +295,7 @@
   transform: translateY(-2px);
 }
 
-/* ============================================
-   IMAGE CONTENT (RIGHT SIDE)
-   ============================================ */
+
 .hero-image-content {
   position: relative;
   display: flex;
@@ -370,7 +364,6 @@
   }
 }
 
-/* Decorative Lines */
 .hero-decorative-lines {
   position: absolute;
   top: 0;
@@ -422,9 +415,7 @@
   }
 }
 
-/* ============================================
-   SLIDE NUMBER INDICATOR
-   ============================================ */
+
 .slide-number {
   position: absolute;
   bottom: 8%;
@@ -454,9 +445,7 @@
   opacity: 0.5;
 }
 
-/* ============================================
-   SPEED LINES DECORATION
-   ============================================ */
+
 .speed-lines {
   position: absolute;
   top: 0;
@@ -510,9 +499,7 @@
   }
 }
 
-/* ============================================
-   FADE IN ANIMATION
-   ============================================ */
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -523,11 +510,8 @@
 }
 
 
-/* ============================================
-   NAVIGATION CONTROLS
-   ============================================ */
 
-/* Navigation Arrows */
+
 .hero-nav-arrow {
   position: absolute;
   top: 50%;
@@ -635,215 +619,7 @@
 }
 
 
-@media (max-width: 1024px) {
-  .hero-content-wrapper {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-    text-align: center;
-  }
-  
-  .hero-text-content {
-    order: 2;
-  }
-  
-  .hero-image-content {
-    order: 1;
-  }
-  
-  .hero-feature-badge,
-  .hero-cta-group,
-  .hero-stats {
-    justify-content: center;
-  }
-  
-  .hero-description {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  .hero-title {
-    font-size: clamp(2rem, 6vw, 3rem);
-  }
-  
-  .slide-number {
-    bottom: 5%;
-    right: 50%;
-    transform: translateX(50%);
-  }
 
-  .hero-nav-arrow {
-    width: 45px;
-    height: 45px;
-  }
-
-  .hero-nav-prev {
-    left: 1%;
-  }
-
-  .hero-nav-next {
-    right: 1%;
-  }
-
-  .hero-nav-dots {
-    bottom: 10%;
-    gap: 0.75rem;
-    padding: 0.5rem 1rem;
-  }
-
-  .hero-dot {
-    width: 10px;
-    height: 10px;
-  }
-}
-
-@media (max-width: 768px) {
-  .hero-slide {
-    padding: 0 5%;
-  }
-  
-  .hero-content-wrapper {
-    padding-top: 2rem;
-  }
-  
-  .hero-stats {
-    gap: 1.5rem;
-  }
-  
-  .hero-cta-group {
-    flex-direction: column;
-    width: 100%;
-  }
-  
-  .hero-btn {
-    width: 100%;
-    max-width: 300px;
-    justify-content: center;
-  }
-  
-  .hero-image-wrapper {
-    max-width: 400px;
-  }
-
-  .hero-nav-arrow {
-    width: 40px;
-    height: 40px;
-  }
-
-  .hero-nav-arrow svg {
-    width: 20px;
-    height: 20px;
-  }
-
-  .hero-nav-dots {
-    bottom: 15%;
-  }
-}
-
-@media (max-width: 480px) {
-  .hero-section {
-    min-height: 700px;
-  }
-  
-  .hero-title {
-    font-size: 1.75rem;
-  }
-  
-  .hero-description {
-    font-size: 1rem;
-  }
-  
-  .stat-value {
-    font-size: 1.25rem;
-  }
-  
-  .hero-btn {
-    padding: 0.875rem 1.5rem;
-    font-size: 0.875rem;
-  }
-  
-  .slide-current {
-    font-size: 2rem;
-  }
-
-  .hero-nav-arrow {
-    width: 35px;
-    height: 35px;
-  }
-
-  .hero-nav-prev {
-    left: 0.5%;
-  }
-
-  .hero-nav-next {
-    right: 0.5%;
-  }
-
-  .hero-nav-dots {
-    gap: 0.5rem;
-    padding: 0.4rem 0.8rem;
-  }
-
-  .hero-dot {
-    width: 8px;
-    height: 8px;
-    border-width: 1.5px;
-  }
-}
-
-
-.slick-slider {
-  position: relative;
-  display: block;
-  box-sizing: border-box;
-  user-select: none;
-  touch-action: pan-y;
-}
-
-.slick-list {
-  position: relative;
-  display: block;
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-}
-
-.slick-track {
-  position: relative;
-  top: 0;
-  left: 0;
-  display: flex;
-  align-items: center;
-}
-
-.slick-slide {
-  float: left;
-  height: 100%;
-  min-height: 1px;
-}
-
-.slick-slide > div {
-  height: 100%;
-}
-
-.slick-dots {
-  display: none !important;
-}
-
-
-
-::-webkit-scrollbar {
-  width: 0px;
-  height: 0px;
-}
-
-
-::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-::-webkit-scrollbar-thumb {
-  background: transparent;
-}
 @media (max-width: 1024px) {
   .hero-section {
     padding-top: 60px;
@@ -928,7 +704,7 @@
   .hero-slide {
     height: calc(100vh - 55px) !important;
     min-height: calc(600px - 55px);
-    padding: 0 5%;
+    padding: 0 4%;
   }
 
   .hero-slider {
@@ -937,7 +713,8 @@
   }
   
   .hero-content-wrapper {
-    padding-top: 2rem;
+    padding-top: 1.5rem;
+    gap: 1.5rem;
   }
   
   .hero-stats {
@@ -970,73 +747,203 @@
   }
 
   .hero-nav-dots {
-    bottom: 2%;
+    bottom: 2.5%;
   }
 }
 
 @media (max-width: 480px) {
   .hero-section {
-    min-height: 700px;
+    min-height: 100vh;
     padding-top: 50px;
+    padding-bottom: 0;
   }
 
   .hero-slide {
-    height: calc(100vh - 50px) !important;
-    min-height: calc(650px - 50px);
+    height: 100vh !important;
+    min-height: 100vh;
+    padding: 0 3% 0 3%;
+    display: flex !important;
+    align-items: flex-start;
+    padding-top: 1rem;
   }
 
   .hero-slider {
-    height: calc(100vh - 50px);
-    min-height: calc(650px - 50px);
+    height: 100vh;
+    min-height: 100vh;
+  }
+
+  .hero-content-wrapper {
+    gap: 1rem;
+    padding-top: 0;
+    padding-bottom: 5.5rem;
+  }
+
+  .hero-feature-badge {
+    margin-bottom: 0.75rem;
+  }
+
+  .badge-text {
+    font-size: 0.7rem;
+  }
+
+  .badge-line {
+    width: 30px;
   }
   
   .hero-title {
-    font-size: 1.75rem;
+    font-size: 1.6rem;
+    margin-bottom: 0.75rem;
   }
   
   .hero-description {
-    font-size: 1rem;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+  }
+
+  .hero-stats {
+    margin-bottom: 1rem;
+    gap: 1rem;
   }
   
   .stat-value {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
+  }
+
+  .stat-label {
+    font-size: 0.65rem;
+  }
+
+  .stat-divider {
+    height: 30px;
   }
   
   .hero-btn {
-    padding: 0.875rem 1.5rem;
-    font-size: 0.875rem;
+    padding: 0.75rem 1.25rem;
+    font-size: 0.8rem;
+  }
+
+  .hero-cta-group {
+    margin-bottom: 0;
+    gap: 0.75rem;
   }
   
   .slide-current {
-    font-size: 2rem;
+    font-size: 1.5rem;
+  }
+
+  .slide-number {
+    display: none;
   }
 
   .hero-image-wrapper {
-    max-width: 300px;
+    max-width: 260px;
+    margin-bottom: 0;
   }
 
   .hero-nav-arrow {
-    width: 35px;
-    height: 35px;
+    width: 36px;
+    height: 36px;
+    top: 40%;
+  }
+
+  .hero-nav-arrow svg {
+    width: 18px;
+    height: 18px;
   }
 
   .hero-nav-prev {
-    left: 0.5%;
+    left: 2%;
   }
 
   .hero-nav-next {
-    right: 0.5%;
+    right: 2%;
   }
 
   .hero-nav-dots {
     gap: 0.5rem;
-    padding: 0.4rem 0.8rem;
+    padding: 0.5rem 0.9rem;
     bottom: 1.5%;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .hero-dot {
-    width: 8px;
-    height: 8px;
+    width: 7px;
+    height: 7px;
     border-width: 1.5px;
   }
+}
+
+@media (max-width: 360px) {
+  .hero-image-wrapper {
+    max-width: 240px;
+  }
+
+  .hero-title {
+    font-size: 1.4rem;
+  }
+
+  .hero-description {
+    font-size: 0.85rem;
+  }
+
+  .hero-btn {
+    padding: 0.7rem 1rem;
+    font-size: 0.75rem;
+  }
+}
+
+
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  user-select: none;
+  touch-action: pan-y;
+}
+
+.slick-list {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.slick-track {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+}
+
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+}
+
+.slick-slide > div {
+  height: 100%;
+}
+
+.slick-dots {
+  display: none !important;
+}
+
+
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: transparent;
 }
